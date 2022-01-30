@@ -1,6 +1,12 @@
 .wrapper {
   height: 100%;
   width: 100%;
+  background-color: #fdfbf8;
+  color: #656463;
+}
+
+.wrapper h1 {
+  color: #656463;
 }
 
 .wrapper header {
@@ -69,13 +75,82 @@
           align-items: center;
   -webkit-box-shadow: 1px 1px 3px black;
           box-shadow: 1px 1px 3px black;
-  border-radius: 15px;
+  border-radius: 30px;
   padding: 5 20px;
   min-width: 35vw;
+  position: relative;
 }
 
 .wrapper main section img {
   width: 30px;
+}
+
+.wrapper main .equal-breathing {
+  background-color: #c2d6bd;
+}
+
+.wrapper main .equal-breathing img.equal-btn {
+  background-color: #d2e0cf;
+  position: absolute;
+  right: 90%;
+  top: 5%;
+}
+
+.wrapper main .equal-breathing img.info-btn {
+  position: absolute;
+  left: 90%;
+  top: 5%;
+}
+
+.wrapper main .box-breathing {
+  background-color: #c9e3e3;
+}
+
+.wrapper main .box-breathing img.square {
+  background-color: #d7e9e9;
+  position: absolute;
+  right: 90%;
+  top: 5%;
+}
+
+.wrapper main .box-breathing img.info-btn {
+  position: absolute;
+  left: 90%;
+  top: 10%;
+}
+
+.wrapper main .breathing-mode {
+  background-color: #f2dac6;
+}
+
+.wrapper main .breathing-mode img.angle {
+  background-color: #f4e3d5;
+  position: absolute;
+  right: 90%;
+  top: 5%;
+}
+
+.wrapper main .breathing-mode img.info-btn {
+  position: absolute;
+  left: 90%;
+  top: 5%;
+}
+
+.wrapper main .breathing-test {
+  background-color: #e0c8c8;
+}
+
+.wrapper main .breathing-test img.pause {
+  background-color: #e7d7d7;
+  position: absolute;
+  right: 90%;
+  top: 5%;
+}
+
+.wrapper main .breathing-test img.info-btn {
+  position: absolute;
+  left: 90%;
+  top: 5%;
 }
 
 .wrapper main button {
@@ -89,7 +164,11 @@
       align-content: center;
   color: #272727;
   font-size: 16px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  gap: 10px;
   margin-bottom: 10px;
+  padding: 3px;
 }
 
 .wrapper main button img.stopwatch {

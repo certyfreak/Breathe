@@ -2,6 +2,9 @@
     height: 100%
     width: 100%
     background-color: #fdfbf8
+    color:  #656463
+    h1
+        color: #656463
     header
         display: flex
         justify-content: space-between
@@ -30,21 +33,56 @@
             justify-content: center
             align-items: center
             box-shadow: 1px 1px 3px black
-            border-radius: 15px
+            border-radius: 30px
             padding: 5 20px
             min-width: 35vw
+            position: relative
+            img
+                 width: 30px
         .equal-breathing
-            background-color:#d2e0cf
-                div > a
-                    background-color: #d2e0cf
+            background-color: #c2d6bd
+            img.equal-btn
+                background-color: #d2e0cf
+                position: absolute
+                right: 90%
+                top: 5%
+            img.info-btn
+                position: absolute
+                left: 90%
+                top: 5%
         .box-breathing
             background-color: #c9e3e3
+            img.square
+                background-color: #d7e9e9
+                position: absolute
+                right: 90%
+                top: 5%
+            img.info-btn
+                position: absolute
+                left: 90%
+                top: 10%
         .breathing-mode
             background-color: #f2dac6
+            img.angle
+                background-color: #f4e3d5
+                position: absolute
+                right: 90%
+                top: 5%
+            img.info-btn
+                position: absolute
+                left: 90%
+                top: 5%
         .breathing-test
             background-color: #e0c8c8
-            img
-                width: 30px
+            img.pause
+                background-color: #e7d7d7
+                position: absolute
+                right: 90%
+                top: 5%
+            img.info-btn
+                position: absolute
+                left: 90%
+                top: 5%
         button
             display: flex
             justify-content: center
@@ -53,7 +91,7 @@
             font-size: 16px
             background-color: transparentize(white,1 )
             border-radius: 5px
-            justify-content: space-between
+            gap: 10px
             margin-bottom: 10px
             padding: 3px
             img.stopwatch
