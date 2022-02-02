@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CustomComponent } from './components/custom/custom.component';
+import { BreatheComponent } from './components/home/breathe/breathe.component';
 import { HomeComponent } from './components/home/home.component';
 import { InfoComponent } from './components/info/info.component';
 import { ProgressComponent } from './components/progress/progress.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'progress',component:ProgressComponent },
   {path:'setting',component:SettingComponent},
   {path:'info',component:InfoComponent},
+  {path:'breathe',component:BreatheComponent},
   {path:' ',component:HomeComponent},
   {path:'**',component:HomeComponent}
 ];
