@@ -11,10 +11,10 @@
 .circle {
     border-radius: 50%;
     background-color: deepskyblue;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     opacity: 0;
-    animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+    animation: scaleIn 5s infinite alternate-reverse cubic-bezier(.36, .11, .89, .32);
   }
 
   @keyframes scaleIn {
