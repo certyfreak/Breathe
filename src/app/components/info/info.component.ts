@@ -16,20 +16,21 @@ export class InfoComponent implements OnInit {
   ) { }
 
   info_to_show : INFO  ={
-    equal : false,
-    square : false,
-    mode : false,
-    test : false
+    equal : true,
+    square : true,
+    mode : true,
+    test : true
   }
 
 
 
   ngOnInit() {
-    let clicked_info : string = ''
+    console.log('ok')
+    let clicked_info : string = ' ';
     
     this.info_sec.info.subscribe((str : string)=>{
       str = clicked_info;
-      console.log(str,clicked_info)
+
     })
     switch (clicked_info) {
       case "equal":
@@ -37,6 +38,7 @@ export class InfoComponent implements OnInit {
         this.info_to_show.square = false;
         this.info_to_show.mode = false;
         this.info_to_show.test = false;
+        console.log(clicked_info,'wokred')
         break;
       case "square":
         this.info_to_show.square = true;
@@ -48,13 +50,8 @@ export class InfoComponent implements OnInit {
         this.info_to_show.mode = true;
         this.info_to_show.equal = false;
         this.info_to_show.square = false;
-        this.info_to_show.test = false;
         break;
       case "test":
-        this.info_to_show.test = true;
-        this.info_to_show.equal = false;
-        this.info_to_show.square = false;
-        this.info_to_show.mode = false;
         break;
     }
   }
