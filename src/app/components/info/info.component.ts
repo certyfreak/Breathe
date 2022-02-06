@@ -16,20 +16,21 @@ export class InfoComponent implements OnInit {
   ) { }
 
   info_to_show : INFO  ={
-    equal : true,
-    square : true,
-    mode : true,
-    test : true
+    equal : false,
+    square : false,
+    mode : false,
+    test : false
   }
 
-
+  clicked_info : string =  ""
 
   ngOnInit() {
     console.log('ok')
     let clicked_info : string = ' ';
     
     this.info_sec.info.subscribe((str : string)=>{
-      str = clicked_info;
+    clicked_info = str;
+    this.clicked_info = clicked_info
 
     })
     switch (clicked_info) {

@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <section class="equal-breathing" >
+  <section class="equal-breathing" *ngIf="info_to_show.equal">
     <a routerLink="/home" (click)="exit()">
       <img src="assets/x.svg" class="close" alt="close">
       <span></span>
@@ -39,7 +39,7 @@
       BEGIN TEST
     </button>
   </section>
-  <section class="mode-breathing">
+  <section class="mode-breathing" *ngIf="false">
     <a routerLink="/home" (click)="exit()">
       <img src="assets/x.svg" class="close" alt="close">
     </a>
@@ -61,7 +61,7 @@
       BEGIN TEST
     </button>
   </section>
-  <section class="test-breathing">
+  <section class="test-breathing" *ngIf="false" >
     <a routerLink="/home" (click)="exit()">
       <img src="assets/x.svg" class="close" alt="close">
     </a>
