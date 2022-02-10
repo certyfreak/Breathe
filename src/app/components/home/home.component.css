@@ -1,0 +1,46 @@
+.wrapper{
+    color: #38c9bf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:70vw;
+    padding: 2vw;
+    overflow-x:scroll;
+    scroll-padding: 10%;
+    scroll-snap-type: x mandatory;
+    scroll-margin: 10%;
+}
+
+/* main::-webkit-scrollbar{
+    background-color: transparent;
+    color: transparent;
+
+} */
+
+section{
+    padding: 3%;
+    /* width: 50vw; */
+    border: 1px solid white;
+}
+
+h2{
+    font-weight:lighter !important;
+    color: white;
+}
+
+span{
+    font-weight: 700;
+}
+
+img{
+    width: 25vw;
+}
