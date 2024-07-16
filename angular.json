@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "breathe:build:production"
+              "buildTarget": "breathe:build:production"
             },
             "development": {
-              "browserTarget": "breathe:build:development"
+              "buildTarget": "breathe:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "breathe:build"
+            "buildTarget": "breathe:build"
           }
         },
         "test": {
